@@ -21,7 +21,7 @@
     "@anthropic-ai/sdk": "^0.30.0",
     "@modelcontextprotocol/sdk": "^1.0.0",
     "better-sqlite3": "^11.0.0",
-    "sqlite-vss": "^0.9.0",
+    "sqlite-vss": "^0.1.2",
     "ws": "^8.18.0",
     "zod": "^3.23.0"
   },

@@ -1,18 +1,7 @@
-import { describe, it, expect, beforeEach } from 'vitest';
-import Database from 'better-sqlite3';
+import { describe, it, expect } from 'vitest';
 import { CardModel } from './card.js';
 
 describe('CardModel', () => {
-  let db: Database.Database;
-
-  beforeEach(() => {
-    // Use in-memory DB for tests
-    db = new Database(':memory:');
-    db.pragma('journal_mode = WAL');
-
-    // Inject test DB — this is a test shim
-    // In real tests we'd use DI, but for simplicity:
-  });
 
   it('should create a card with valid input', () => {
     const hash = CardModel.hashContent('test content');

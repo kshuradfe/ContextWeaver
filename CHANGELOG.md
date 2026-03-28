@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.0.1] - 2026-03-26
+
+### Added
+- Test fix: removed unused better-sqlite3 import from card.test.ts (native module not needed for hash-only tests)
+
 ## [0.1.0.0] - 2026-03-26
 
 ### Added
