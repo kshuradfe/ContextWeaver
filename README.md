@@ -24,10 +24,11 @@ cd packages/core && pnpm dev
 #   "mcpServers": {
 #     "context-weaver": {
 #       "command": "node",
-#       "args": ["/path/to/packages/core/dist/index.js"]
+#       "args": ["/ABSOLUTE/PATH/to/packages/core/dist/index.js"]
 #     }
 #   }
 # }
+# Note: Run `pnpm build` in packages/core first to generate dist/index.js
 ```
 
 ## Architecture
@@ -37,7 +38,7 @@ Context Daemon (Node.js)
 ├── REST API (127.0.0.1:7070) — CLI tool
 ├── WebSocket Server (127.0.0.1:7070) — VS Code + Chrome extensions
 ├── MCP Server (@modelcontextprotocol/sdk) — Claude Desktop
-└── SQLite (cards, card_vectors, context_stream, tasks, ws_sessions)
+└── SQLite (cards, card_vectors, card_relations, context_stream, tasks, ws_sessions)
 ```
 
 ## Packages
@@ -45,7 +46,7 @@ Context Daemon (Node.js)
 | Package | Description |
 |---------|-------------|
 | `packages/core` | Context Daemon — DB, MCP server, WebSocket, REST |
-| `packages/cli` | CLI tool — `cw save`, `cw search`, `cw list` |
+| `packages/cli` | CLI tool — `cw save`, `cw search`, `cw list`, `cw delete` |
 
 ## MCP Tools
 

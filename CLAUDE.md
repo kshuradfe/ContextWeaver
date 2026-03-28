@@ -39,6 +39,16 @@ Context Daemon (Node.js + TypeScript)
 
 Run tests with `pnpm test` (vitest).
 
+**Framework:** Vitest
+**Test directory:** `packages/core/src/models/`
+**Test file naming:** `*.test.ts`
+**Run:** `pnpm test` (root) or `cd packages/core && pnpm test`
+
+**Conventions:**
+- Tests for a module go in the same `src/` directory as `*.test.ts`
+- Use `describe/it/expect` from vitest
+- DB-dependent tests need native module build (better-sqlite3) — on Windows without MSVC, run hash-only tests
+
 ## Environment Variables
 
 See `.env.example`. Required:

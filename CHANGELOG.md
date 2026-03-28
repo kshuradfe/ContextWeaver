@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file.
 - Context Daemon (Node.js + TypeScript)
 - SQLite schema (6 tables: cards, card_vectors, card_relations, context_stream, tasks, ws_sessions)
 - MCP Server with 5 tools: search_knowledge, save_card, get_context, get_related_tasks, get_recent_context
-- REST API (GET/POST /cards, GET /search, GET /context/recent)
+- REST API (GET/POST/DELETE /cards, GET /search, GET /context/recent)
 - WebSocket server (127.0.0.1:7070 with fallback to 7071/7072)
 - CLI tool (cw save, cw search, cw list, cw delete)
 - Vector search via Jina AI (jina-embed-text-v3, 1024 dim)
